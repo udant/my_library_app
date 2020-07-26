@@ -1,16 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+/*import React from 'react';
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { StyleSheet, Text, View, Image } from 'react-native';
-import {createAppContainer, createSwitchNavigator } from "react-navigation";
-import { createBottomTabNavigator} from 'react-navigation-tabs';
+import { createAppContainer } from 'react-navigation';
+import { createBottomTabNavigator } from 'react-navigation-tabs';
+
 import TransactionScreen from './screens/BookTransactionScreen';
 import SearchScreen from './screens/SearchScreen';
-import LoginScreen from './screens/LoginScreen';
-
-
-
-
 
 export default class App extends React.Component {
   render() {
@@ -47,12 +42,7 @@ const TabNavigator = createBottomTabNavigator({
  }}
 
 
- const switchNavigator = createSwitchNavigator({
-  LoginScreen: { screen: LoginScreen },
-  TabNavigator: { screen: TabNavigator },
-});
-
-const AppContainer = createAppContainer(switchNavigator);
+const AppContainer = createAppContainer(TabNavigator);
 
 /*const styles = StyleSheet.create({
   container: {
@@ -62,3 +52,4 @@ const AppContainer = createAppContainer(switchNavigator);
     justifyContent: 'center',
   },
 });*/
+
